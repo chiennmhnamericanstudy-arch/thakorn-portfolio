@@ -1,0 +1,61 @@
+<section class="container simulator-intro">
+  <div><p class="eyebrow">Interactive lab / 01</p><h1>Drone Simulator<span>A rescue mission, in your hands.</span></h1></div>
+  <p>Explore the decisions behind a rescue flight in a short 2D game inspired by my drone project.</p>
+</section>
+
+<section class="container simulator-layout" aria-label="Rescue drone game and flight briefing">
+  <div class="simulator-console" id="rescue-game">
+    <div class="simulator-hud" aria-label="Mission telemetry">
+      <div><span>Time left</span><strong id="game-time">01:15</strong></div>
+      <div><span>Assisted</span><strong id="game-rescued">0 <small>/ 3</small></strong></div>
+      <div><span>Rings left</span><strong id="game-rings">8</strong></div>
+      <div><span>Collisions</span><strong id="game-collisions">0</strong></div>
+    </div>
+    <div class="simulator-stage">
+      <canvas id="rescue-canvas" width="900" height="560" tabindex="0" aria-label="Rescue mission play area" aria-describedby="game-controls-help game-status">
+        This game needs a browser with Canvas support. You can explore the rescue-drone project through the link below.
+      </canvas>
+      <div class="simulator-overlay" id="game-overlay">
+        <div class="simulator-overlay-content">
+          <p class="simulator-label" id="overlay-label">75 seconds · 3 swimmers</p>
+          <h2 id="overlay-title">Take the controls.</h2>
+          <p id="overlay-description">Search the three marked areas. Hover to scan, then line up your crosshair and release a flotation ring.</p>
+          <div id="game-results" hidden></div>
+          <a class="simulator-project-link" id="game-project-link" href="/projects/rescue-drone-engineering/" hidden>See the real rescue-drone project ↗</a>
+          <button class="simulator-primary" id="game-start" type="button" disabled>Loading flight controls…</button>
+          <p class="simulator-load-help" id="game-load-help">If the controls do not load, refresh this page with JavaScript enabled.</p>
+          <button class="simulator-secondary" id="game-restart" type="button" hidden>Restart mission</button>
+        </div>
+      </div>
+      <div class="simulator-corner" aria-hidden="true">RESCUE / COASTAL SECTOR</div>
+    </div>
+    <div class="simulator-status-row"><p id="game-status" role="status" aria-live="polite" aria-atomic="true">Ready for takeoff. Read the flight briefing, then start your mission.</p><span id="game-wind">Wind: light</span></div>
+    <div class="simulator-controls" aria-label="Flight controls">
+      <div class="simulator-dpad" role="group" aria-label="Hold a direction to fly">
+        <button class="direction-up" type="button" data-flight="up" aria-label="Fly up" disabled>↑</button>
+        <button class="direction-left" type="button" data-flight="left" aria-label="Fly left" disabled>←</button>
+        <button class="direction-down" type="button" data-flight="down" aria-label="Fly down" disabled>↓</button>
+        <button class="direction-right" type="button" data-flight="right" aria-label="Fly right" disabled>→</button>
+      </div>
+      <div class="simulator-action-controls"><button class="simulator-drop" id="game-drop" type="button" disabled>Release ring <kbd>Space</kbd></button><button class="simulator-pause" id="game-pause" type="button" disabled>Pause <kbd>P</kbd></button></div>
+      <p class="simulator-key-hint" id="game-controls-help"><kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd> or arrow keys to fly.<br>Hold the on-screen arrows on a phone. Press <kbd>P</kbd> or <kbd>Esc</kbd> to pause.</p>
+    </div>
+    <noscript><p class="simulator-noscript">Please enable JavaScript to play this interactive mission. The rest of the portfolio is available without it.</p></noscript>
+  </div>
+
+  <aside class="simulator-briefing" aria-labelledby="flight-briefing">
+    <p class="eyebrow">Before you fly</p><h2 id="flight-briefing">Flight briefing</h2>
+    <ol class="simulator-steps">
+      <li><span>01</span><div><h3>Search &amp; identify</h3><p>Fly into areas A, B, and C. Stay near each marker until the scan ring fills and the swimmer appears.</p></div></li>
+      <li><span>02</span><div><h3>Steady your approach</h3><p>Keep clear of the rocky islands. The wind nudges your drone and shifts the drop crosshair.</p></div></li>
+      <li><span>03</span><div><h3>Release support</h3><p>Place the yellow crosshair over a scanned swimmer, then release a ring. You have eight attempts.</p></div></li>
+    </ol>
+    <div class="simulator-legend" aria-label="Map legend"><span><i class="legend-search"></i>Search area</span><span><i class="legend-drop"></i>Drop crosshair</span><span><i class="legend-obstacle"></i>Obstacle</span></div>
+    <details class="simulator-scoring"><summary>How the score works</summary><p>Each swimmer assisted earns 100 points, plus up to 100 for drop accuracy. Assist all three for a time bonus of up to 150. Each collision costs 15 points; the total never falls below zero.</p><p>Move closer after a missed drop and try again. The mission ends when all three swimmers have a ring, time runs out, or all eight rings have landed.</p></details>
+  </aside>
+</section>
+
+<section class="container simulator-context" aria-labelledby="simulation-context">
+  <div><p class="eyebrow">From play to prototype</p><h2 id="simulation-context">A window into the real project.</h2></div>
+  <div><p>Finding a person, approaching carefully, and delivering support are also central to my rescue-drone work. The project report describes computer-vision detection, flight control, and a flotation-release mechanism.</p><p class="simulator-scope">This educational game uses simplified flight, wind, and rescue mechanics. Its scores and timing are game settings, not measured prototype performance.</p><a class="text-link" href="/projects/rescue-drone-engineering/">Explore the rescue-drone project <span aria-hidden="true">↗</span></a></div>
+</section>

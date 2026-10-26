@@ -1,0 +1,18 @@
+/* Frame the selected portrait around the team and award in compact cards. */
+.card-image img[src="/assets/wro-award-banner.webp"],
+.award-feature figure img[src="/assets/wro-award-banner.webp"] {
+  object-position: 50% 78%;
+}
+
+/* Retain the entire award photograph on the WRO project page. */
+.detail-figure.preserve-frame img[src="/assets/wro-award-banner.webp"] {
+  background: #071b32;
+  object-position: center;
+}
+
+/* Keep both the student's face and the award board visible in the gallery. */
+.media-gallery img[src="/assets/wro-first-place-portrait.webp"] {
+  object-fit: contain;
+  object-position: center;
+  background: #e8eef1;
+}

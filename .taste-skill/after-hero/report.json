@@ -1,0 +1,2868 @@
+{
+ "url": "http://localhost:8000",
+ "at": "2026-10-26T07:40:03.272Z",
+ "allow": [],
+ "viewports": [
+  {
+   "width": 1440,
+   "height": 900,
+   "load": "load",
+   "screens": 5,
+   "filled": [
+    1,
+    0.57,
+    0.55,
+    0.67,
+    0.59
+   ],
+   "motion": {
+    "elements": 0,
+    "css": 0,
+    "transitions": 0,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "page": {
+     "height": 3898,
+     "screens": 4.3,
+     "words": 317,
+     "img": 8,
+     "video": 0,
+     "canvas": 0,
+     "svg": 0,
+     "sections": 5,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 7,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "drone-field-small.webp",
+      "smartvest-small.webp",
+      "portrait.webp",
+      "rescue-drone-operation-small.webp",
+      "smartvest-operation-small.webp",
+      "phyx-small-group-learning-small.webp"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "From prototype to public impact.",
+     "words": 5,
+     "chars": 32,
+     "lines": 2,
+     "size": 83.5,
+     "vw": 5.8,
+     "font": "Manrope",
+     "weight": 600,
+     "tracking": -0.065,
+     "leading": 1.08,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "left",
+     "widthRatio": 0.48,
+     "top": 269,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "From prototype to public impact.",
+     "words": 5,
+     "lines": 2,
+     "size": 83.5,
+     "font": "Manrope"
+    },
+    "headings": [
+     {
+      "text": "From prototype to public impact.",
+      "words": 5,
+      "chars": 32,
+      "lines": 2,
+      "size": 83.5,
+      "vw": 5.8,
+      "font": "Manrope",
+      "weight": 600,
+      "tracking": -0.065,
+      "leading": 1.08,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.48,
+      "top": 269,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "60 flights",
+      "words": 2,
+      "chars": 10,
+      "lines": 1,
+      "size": 38,
+      "vw": 2.6,
+      "font": "Manrope",
+      "weight": 500,
+      "tracking": -0.045,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.07,
+      "top": 942,
+      "tag": "strong",
+      "kind": "heading"
+     },
+     {
+      "text": "500 people",
+      "words": 2,
+      "chars": 10,
+      "lines": 1,
+      "size": 38,
+      "vw": 2.6,
+      "font": "Manrope",
+      "weight": 500,
+      "tracking": -0.045,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.09,
+      "top": 942,
+      "tag": "strong",
+      "kind": "heading"
+     },
+     {
+      "text": "VND 100m",
+      "words": 2,
+      "chars": 8,
+      "lines": 1,
+      "size": 38,
+      "vw": 2.6,
+      "font": "Manrope",
+      "weight": 500,
+      "tracking": -0.045,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.11,
+      "top": 942,
+      "tag": "strong",
+      "kind": "heading"
+     },
+     {
+      "text": "Engineering with a purpose.",
+      "words": 4,
+      "chars": 27,
+      "lines": 1,
+      "size": 47.5,
+      "vw": 3.3,
+      "font": "Manrope",
+      "weight": 600,
+      "tracking": -0.05,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.39,
+      "top": 1203,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "See how the systems work.",
+      "words": 5,
+      "chars": 25,
+      "lines": 1,
+      "size": 28,
+      "vw": 1.9,
+      "font": "Manrope",
+      "weight": 600,
+      "tracking": -0.035,
+      "leading": 1.35,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.86,
+      "top": 2014,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Knowledge grows when it is shared.",
+      "words": 6,
+      "chars": 34,
+      "lines": 2,
+      "size": 44,
+      "vw": 3.1,
+      "font": "Manrope",
+      "weight": 600,
+      "tracking": -0.05,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.41,
+      "top": 2747,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Milestones in learning.",
+      "words": 3,
+      "chars": 23,
+      "lines": 1,
+      "size": 47.5,
+      "vw": 3.3,
+      "font": "Manrope",
+      "weight": 600,
+      "tracking": -0.05,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.32,
+      "top": 3366,
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 8,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 0,
+     "medianWords": 3,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "DM Sans",
+       "share": 0.84,
+       "mono": false
+      },
+      {
+       "family": "Manrope",
+       "share": 0.16,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      19,
+      20,
+      23,
+      24,
+      26,
+      27,
+      28,
+      38,
+      44,
+      48,
+      84
+     ],
+     "sizeCount": 17,
+     "notLoaded": [],
+     "body": {
+      "font": "DM Sans",
+      "size": 16,
+      "leading": 1.6,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 5.7
+     },
+     "measureChars": 69,
+     "max": {
+      "size": 83.5,
+      "vw": 5.8,
+      "font": "Manrope",
+      "text": "From prototypeto"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 8,
+     "microLabelShare": 0.073,
+     "microSamples": [
+      "Student engineer · Researcher · Builder",
+      "01 / Selected work",
+      "Engineering",
+      "Engineering",
+      "Research",
+      "Inside the prototypes"
+     ],
+     "upperShare": 0.08,
+     "centerShare": 0,
+     "smallText": 3
+    },
+    "eyebrows": [
+     {
+      "text": "Student engineer · Researcher · Builder",
+      "above": "From prototype to public impact.",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 14,
+      "top": 222
+     },
+     {
+      "text": "01 / Selected work",
+      "above": "Engineering with a purpose.",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 14,
+      "top": 1169
+     },
+     {
+      "text": "Inside the prototypes",
+      "above": "See how the systems work.",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 14,
+      "top": 1981
+     },
+     {
+      "text": "02 / Initiatives & Impact",
+      "above": "Knowledge grows when it is shared.",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 14,
+      "top": 2709
+     },
+     {
+      "text": "03 / Recognition",
+      "above": "Milestones in learning.",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 14,
+      "top": 3332
+     }
+    ],
+    "numbered": [
+     {
+      "text": "01 / Selected work",
+      "size": 14,
+      "top": 1169
+     },
+     {
+      "text": "02 / Initiatives & Impact",
+      "size": 14,
+      "top": 2709
+     },
+     {
+      "text": "03 / Recognition",
+      "size": 14,
+      "top": 3332
+     }
+    ],
+    "color": {
+     "bodyBg": "#f7f9fb",
+     "bodyBgHsl": {
+      "h": 210,
+      "s": 0.33,
+      "l": 0.98
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#0c293b",
+       "top": 2620,
+       "hsl": {
+        "h": 203,
+        "s": 0.66,
+        "l": 0.14
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#526676",
+       "share": 0.36
+      },
+      {
+       "color": "#0c293b",
+       "share": 0.31
+      },
+      {
+       "color": "#ffffff",
+       "share": 0.13
+      },
+      {
+       "color": "#c5d8e3",
+       "share": 0.11
+      },
+      {
+       "color": "#007d96",
+       "share": 0.04
+      }
+     ],
+     "button": {
+      "bg": "#ffffff",
+      "hsl": {
+       "h": 0,
+       "s": 0,
+       "l": 1
+      },
+      "fg": "#0c293b"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 3,
+     "inHero": 2,
+     "radius": 3,
+     "height": 57,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Skip to content",
+      "Explore my work ↗"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 1,
+     "scrims": 0,
+     "gradientSamples": [
+      "section.container.home-hero → linear-gradient(90deg, rgba(4, 25, 37, 0.86) 0%, rgba(4, 25, 37, 0.64) 42%, rgba(4, 25, 37, 0.18) 72%, rgba(4,"
+     ],
+     "gradientText": 0,
+     "hairlines": 10,
+     "hairlineSamples": [
+      "header.site-header 1440px",
+      "section.proof-band 1440px",
+      "div.card-bottom 395px",
+      "div.card-bottom 395px",
+      "div.card-bottom 395px"
+     ],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 0,
+     "boxRadius": 0,
+     "squareMedia": 1,
+     "roundedMedia": 6,
+     "mediaRadius": 3,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "bg-image",
+      "ratio": 0.9
+     }
+    ],
+    "nav": {
+     "links": 9,
+     "fixed": true,
+     "height": 94,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "dm sans",
+     "manrope"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "pageH": 3898,
+    "margins": {
+     "left": 100,
+     "right": 100
+    },
+    "sections": [
+     {
+      "sel": "section.container.home-hero",
+      "tag": "section",
+      "top": 94,
+      "height": 814,
+      "words": 45,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "From prototype",
+       "size": 84,
+       "tag": "h1"
+      },
+      "left": 100,
+      "right": 769,
+      "textLeft": 100,
+      "textRight": 769,
+      "fullBleed": true,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.proof-band",
+      "tag": "section",
+      "top": 908,
+      "height": 173,
+      "words": 26,
+      "media": 0,
+      "middle": 199,
+      "heading": {
+       "text": "60",
+       "size": 38,
+       "tag": "strong"
+      },
+      "left": 100,
+      "right": 239,
+      "textLeft": 100,
+      "textRight": 239,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.section-heading",
+      "tag": "div",
+      "top": 1169,
+      "height": 133,
+      "words": 16,
+      "media": 0,
+      "middle": 550,
+      "heading": {
+       "text": "Engineering with a purpose.",
+       "size": 48,
+       "tag": "h2"
+      },
+      "left": 100,
+      "right": 144,
+      "textLeft": 100,
+      "textRight": 144,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.featured-grid",
+      "tag": "div",
+      "top": 1338,
+      "height": 558,
+      "words": 73,
+      "media": 3,
+      "middle": 27,
+      "heading": {
+       "text": "Rescue Drone Engineering",
+       "size": 24,
+       "tag": "h3"
+      },
+      "left": 100,
+      "right": 100,
+      "textLeft": 100,
+      "textRight": 130,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.diagram-previews",
+      "tag": "div",
+      "top": 1948,
+      "height": 584,
+      "words": 21,
+      "media": 2,
+      "middle": 27,
+      "heading": {
+       "text": "See how the systems work.",
+       "size": 28,
+       "tag": "h3"
+      },
+      "left": 100,
+      "right": 100,
+      "textLeft": 100,
+      "textRight": 352,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.impact-section",
+      "tag": "section",
+      "top": 2620,
+      "height": 627,
+      "words": 62,
+      "media": 1,
+      "middle": 65,
+      "heading": {
+       "text": "Knowledge grows",
+       "size": 44,
+       "tag": "h2"
+      },
+      "left": 100,
+      "right": 104,
+      "textLeft": 100,
+      "textRight": 104,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.container.home-recognition",
+      "tag": "section",
+      "top": 3247,
+      "height": 422,
+      "words": 27,
+      "media": 0,
+      "middle": 196,
+      "heading": {
+       "text": "Milestones in learning.",
+       "size": 48,
+       "tag": "h2"
+      },
+      "left": 100,
+      "right": 144,
+      "textLeft": 100,
+      "textRight": 144,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer.site-footer",
+      "tag": "footer",
+      "top": 3669,
+      "height": 229,
+      "words": 32,
+      "media": 0,
+      "middle": 311,
+      "heading": null,
+      "left": 100,
+      "right": 100,
+      "textLeft": 100,
+      "textRight": 100,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "From prototype to public impact.",
+      "size": 84,
+      "top": 269,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 100,
+      "n": 8
+     },
+     {
+      "x": 753,
+      "n": 3
+     },
+     {
+      "x": 935,
+      "n": 3
+     },
+     {
+      "x": 175,
+      "n": 2
+     },
+     {
+      "x": 522,
+      "n": 2
+     },
+     {
+      "x": 815,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 19,
+    "bodySize": 14,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 768,
+   "height": 1024,
+   "load": "load",
+   "screens": 4,
+   "filled": [
+    1,
+    0.66,
+    0.81,
+    0.67
+   ],
+   "motion": {
+    "elements": 0,
+    "css": 0,
+    "transitions": 0,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "page": {
+     "height": 3991,
+     "screens": 3.9,
+     "words": 306,
+     "img": 8,
+     "video": 0,
+     "canvas": 0,
+     "svg": 0,
+     "sections": 5,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 7,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "drone-field-small.webp",
+      "smartvest-small.webp",
+      "portrait-small.webp",
+      "rescue-drone-operation-small.webp",
+      "smartvest-operation-small.webp",
+      "phyx-small-group-learning-small.webp"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "From prototype to public impact.",
+     "words": 5,
+     "chars": 32,
+     "lines": 2,
+     "size": 55,
+     "vw": 7.2,
+     "font": "Manrope",
+     "weight": 600,
+     "tracking": -0.065,
+     "leading": 1.08,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "center",
+     "widthRatio": 0.78,
+     "top": 274,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "From prototype to public impact.",
+     "words": 5,
+     "lines": 2,
+     "size": 55,
+     "font": "Manrope"
+    },
+    "headings": [
+     {
+      "text": "From prototype to public impact.",
+      "words": 5,
+      "chars": 32,
+      "lines": 2,
+      "size": 55,
+      "vw": 7.2,
+      "font": "Manrope",
+      "weight": 600,
+      "tracking": -0.065,
+      "leading": 1.08,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.78,
+      "top": 274,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "60 flights",
+      "words": 2,
+      "chars": 10,
+      "lines": 1,
+      "size": 29,
+      "vw": 3.8,
+      "font": "Manrope",
+      "weight": 500,
+      "tracking": -0.045,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.11,
+      "top": 871,
+      "tag": "strong",
+      "kind": "heading"
+     },
+     {
+      "text": "500 people",
+      "words": 2,
+      "chars": 10,
+      "lines": 1,
+      "size": 29,
+      "vw": 3.8,
+      "font": "Manrope",
+      "weight": 500,
+      "tracking": -0.045,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.13,
+      "top": 871,
+      "tag": "strong",
+      "kind": "heading"
+     },
+     {
+      "text": "VND 100m",
+      "words": 2,
+      "chars": 8,
+      "lines": 1,
+      "size": 29,
+      "vw": 3.8,
+      "font": "Manrope",
+      "weight": 500,
+      "tracking": -0.045,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.16,
+      "top": 871,
+      "tag": "strong",
+      "kind": "heading"
+     },
+     {
+      "text": "Engineering with a purpose.",
+      "words": 4,
+      "chars": 27,
+      "lines": 1,
+      "size": 36,
+      "vw": 4.7,
+      "font": "Manrope",
+      "weight": 600,
+      "tracking": -0.05,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.56,
+      "top": 1135,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "See how the systems work.",
+      "words": 5,
+      "chars": 25,
+      "lines": 1,
+      "size": 28,
+      "vw": 3.6,
+      "font": "Manrope",
+      "weight": 600,
+      "tracking": -0.035,
+      "leading": 1.35,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.94,
+      "top": 2181,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Knowledge grows when it is shared.",
+      "words": 6,
+      "chars": 34,
+      "lines": 2,
+      "size": 32,
+      "vw": 4.2,
+      "font": "Manrope",
+      "weight": 600,
+      "tracking": -0.05,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.45,
+      "top": 2736,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Milestones in learning.",
+      "words": 3,
+      "chars": 23,
+      "lines": 1,
+      "size": 36,
+      "vw": 4.7,
+      "font": "Manrope",
+      "weight": 600,
+      "tracking": -0.05,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.45,
+      "top": 3382,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "First Place",
+      "words": 2,
+      "chars": 11,
+      "lines": 1,
+      "size": 27,
+      "vw": 3.5,
+      "font": "Manrope",
+      "weight": 600,
+      "tracking": -0.035,
+      "leading": 1.35,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.35,
+      "top": 3485,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Gold Medal",
+      "words": 2,
+      "chars": 10,
+      "lines": 1,
+      "size": 27,
+      "vw": 3.5,
+      "font": "Manrope",
+      "weight": 600,
+      "tracking": -0.035,
+      "leading": 1.35,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.35,
+      "top": 3485,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "↗",
+      "words": 1,
+      "chars": 1,
+      "lines": 1,
+      "size": 26,
+      "vw": 3.4,
+      "font": "DM Sans",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.65,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.02,
+      "top": 3487,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "↗",
+      "words": 1,
+      "chars": 1,
+      "lines": 1,
+      "size": 26,
+      "vw": 3.4,
+      "font": "DM Sans",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.65,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.02,
+      "top": 3487,
+      "tag": "span",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 12,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 0,
+     "medianWords": 2,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "DM Sans",
+       "share": 0.83,
+       "mono": false
+      },
+      {
+       "family": "Manrope",
+       "share": 0.17,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      19,
+      22,
+      23,
+      24,
+      26,
+      27,
+      28,
+      29,
+      32,
+      36,
+      55
+     ],
+     "sizeCount": 17,
+     "notLoaded": [],
+     "body": {
+      "font": "DM Sans",
+      "size": 16,
+      "leading": 1.6,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 5.7
+     },
+     "measureChars": 43,
+     "max": {
+      "size": 55,
+      "vw": 7.2,
+      "font": "Manrope",
+      "text": "From prototypeto"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 8,
+     "microLabelShare": 0.075,
+     "microSamples": [
+      "Student engineer · Researcher · Builder",
+      "01 / Selected work",
+      "Engineering",
+      "Engineering",
+      "Research",
+      "Inside the prototypes"
+     ],
+     "upperShare": 0.09,
+     "centerShare": 0,
+     "smallText": 3
+    },
+    "eyebrows": [
+     {
+      "text": "Student engineer · Researcher · Builder",
+      "above": "From prototype to public impact.",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 14,
+      "top": 227
+     },
+     {
+      "text": "01 / Selected work",
+      "above": "Engineering with a purpose.",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 14,
+      "top": 1101
+     },
+     {
+      "text": "Inside the prototypes",
+      "above": "See how the systems work.",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 14,
+      "top": 2148
+     },
+     {
+      "text": "02 / Initiatives & Impact",
+      "above": "Knowledge grows when it is shared.",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 14,
+      "top": 2698
+     },
+     {
+      "text": "03 / Recognition",
+      "above": "Milestones in learning.",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 14,
+      "top": 3348
+     }
+    ],
+    "numbered": [
+     {
+      "text": "01 / Selected work",
+      "size": 14,
+      "top": 1101
+     },
+     {
+      "text": "02 / Initiatives & Impact",
+      "size": 14,
+      "top": 2698
+     },
+     {
+      "text": "03 / Recognition",
+      "size": 14,
+      "top": 3348
+     }
+    ],
+    "color": {
+     "bodyBg": "#f7f9fb",
+     "bodyBgHsl": {
+      "h": 210,
+      "s": 0.33,
+      "l": 0.98
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#0c293b",
+       "top": 2622,
+       "hsl": {
+        "h": 203,
+        "s": 0.66,
+        "l": 0.14
+       }
+      },
+      {
+       "color": "#e9eff3",
+       "top": 3671,
+       "hsl": {
+        "h": 204,
+        "s": 0.29,
+        "l": 0.93
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#526676",
+       "share": 0.37
+      },
+      {
+       "color": "#0c293b",
+       "share": 0.28
+      },
+      {
+       "color": "#ffffff",
+       "share": 0.14
+      },
+      {
+       "color": "#c5d8e3",
+       "share": 0.11
+      },
+      {
+       "color": "#007d96",
+       "share": 0.04
+      }
+     ],
+     "button": {
+      "bg": "#ffffff",
+      "hsl": {
+       "h": 0,
+       "s": 0,
+       "l": 1
+      },
+      "fg": "#0c293b"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 3,
+     "inHero": 2,
+     "radius": 3,
+     "height": 57,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Skip to content",
+      "Explore my work ↗"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 1,
+     "scrims": 0,
+     "gradientSamples": [
+      "section.container.home-hero → linear-gradient(90deg, rgba(4, 25, 37, 0.84) 0%, rgba(4, 25, 37, 0.56) 66%, rgba(4, 25, 37, 0.2) 100%), url(\"h"
+     ],
+     "gradientText": 0,
+     "hairlines": 10,
+     "hairlineSamples": [
+      "header.site-header 768px",
+      "section.proof-band 768px",
+      "div.card-bottom 344px",
+      "div.card-bottom 344px",
+      "div.card-bottom 345px"
+     ],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 0,
+     "boxRadius": 0,
+     "squareMedia": 1,
+     "roundedMedia": 6,
+     "mediaRadius": 3,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "bg-image",
+      "ratio": 0.74
+     }
+    ],
+    "nav": {
+     "links": 1,
+     "fixed": true,
+     "height": 82,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "dm sans",
+     "manrope"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "pageH": 3991,
+    "margins": {
+     "left": 24,
+     "right": 24
+    },
+    "sections": [
+     {
+      "sel": "section.container.home-hero",
+      "tag": "section",
+      "top": 82,
+      "height": 760,
+      "words": 45,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "From prototype",
+       "size": 55,
+       "tag": "h1"
+      },
+      "left": 32,
+      "right": 286,
+      "textLeft": 32,
+      "textRight": 286,
+      "fullBleed": true,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.proof-band",
+      "tag": "section",
+      "top": 842,
+      "height": 171,
+      "words": 26,
+      "media": 0,
+      "middle": 92,
+      "heading": {
+       "text": "60",
+       "size": 29,
+       "tag": "strong"
+      },
+      "left": 24,
+      "right": 78,
+      "textLeft": 24,
+      "textRight": 78,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.container.section",
+      "tag": "section",
+      "top": 1013,
+      "height": 1609,
+      "words": 110,
+      "media": 5,
+      "middle": 0,
+      "heading": {
+       "text": "Engineering with a purpose.",
+       "size": 36,
+       "tag": "h2"
+      },
+      "left": 24,
+      "right": 24,
+      "textLeft": 24,
+      "textRight": 25,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.impact-section",
+      "tag": "section",
+      "top": 2622,
+      "height": 641,
+      "words": 62,
+      "media": 1,
+      "middle": 30,
+      "heading": {
+       "text": "Knowledge grows",
+       "size": 32,
+       "tag": "h2"
+      },
+      "left": 24,
+      "right": 56,
+      "textLeft": 24,
+      "textRight": 56,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.container.home-recognition",
+      "tag": "section",
+      "top": 3263,
+      "height": 408,
+      "words": 27,
+      "media": 0,
+      "middle": 41,
+      "heading": {
+       "text": "Milestones in learning.",
+       "size": 36,
+       "tag": "h2"
+      },
+      "left": 24,
+      "right": 68,
+      "textLeft": 24,
+      "textRight": 68,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer.site-footer",
+      "tag": "footer",
+      "top": 3671,
+      "height": 320,
+      "words": 32,
+      "media": 0,
+      "middle": 89,
+      "heading": null,
+      "left": 24,
+      "right": 24,
+      "textLeft": 24,
+      "textRight": 24,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "From prototype to public impact.",
+      "size": 55,
+      "top": 274,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 24,
+      "n": 8
+     },
+     {
+      "x": 399,
+      "n": 7
+     },
+     {
+      "x": 88,
+      "n": 1
+     },
+     {
+      "x": 99,
+      "n": 1
+     },
+     {
+      "x": 479,
+      "n": 1
+     },
+     {
+      "x": 531,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 19,
+    "bodySize": 16,
+    "stage": false,
+    "explains": false,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 390,
+   "height": 844,
+   "load": "load",
+   "screens": 7,
+   "filled": [
+    1,
+    0.78,
+    0.61,
+    0.62,
+    0.83,
+    0.81,
+    0.74
+   ],
+   "motion": {
+    "elements": 0,
+    "css": 0,
+    "transitions": 0,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "page": {
+     "height": 5850,
+     "screens": 6.9,
+     "words": 306,
+     "img": 8,
+     "video": 0,
+     "canvas": 0,
+     "svg": 0,
+     "sections": 5,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 7,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "drone-field-small.webp",
+      "smartvest-small.webp",
+      "portrait-small.webp",
+      "rescue-drone-operation-small.webp",
+      "smartvest-operation-small.webp",
+      "phyx-small-group-learning-small.webp"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "From prototype to public impact.",
+     "words": 5,
+     "chars": 32,
+     "lines": 2,
+     "size": 42.9,
+     "vw": 11,
+     "font": "Manrope",
+     "weight": 600,
+     "tracking": -0.055,
+     "leading": 1.06,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "center",
+     "widthRatio": 0.9,
+     "top": 339,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "From prototype to public impact.",
+     "words": 5,
+     "lines": 2,
+     "size": 42.9,
+     "font": "Manrope"
+    },
+    "headings": [
+     {
+      "text": "From prototype to public impact.",
+      "words": 5,
+      "chars": 32,
+      "lines": 2,
+      "size": 42.9,
+      "vw": 11,
+      "font": "Manrope",
+      "weight": 600,
+      "tracking": -0.055,
+      "leading": 1.06,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 339,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "↗",
+      "words": 1,
+      "chars": 1,
+      "lines": 1,
+      "size": 23,
+      "vw": 5.9,
+      "font": "DM Sans",
+      "weight": 600,
+      "tracking": 0,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.04,
+      "top": 620,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "↗",
+      "words": 1,
+      "chars": 1,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "DM Sans",
+      "weight": 600,
+      "tracking": 0,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.05,
+      "top": 697,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "60 flights",
+      "words": 2,
+      "chars": 10,
+      "lines": 2,
+      "size": 27,
+      "vw": 6.9,
+      "font": "Manrope",
+      "weight": 500,
+      "tracking": -0.045,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.33,
+      "top": 877,
+      "tag": "strong",
+      "kind": "heading"
+     },
+     {
+      "text": "500 people",
+      "words": 2,
+      "chars": 10,
+      "lines": 2,
+      "size": 27,
+      "vw": 6.9,
+      "font": "Manrope",
+      "weight": 500,
+      "tracking": -0.045,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.33,
+      "top": 973,
+      "tag": "strong",
+      "kind": "heading"
+     },
+     {
+      "text": "VND 100m",
+      "words": 2,
+      "chars": 8,
+      "lines": 1,
+      "size": 27,
+      "vw": 6.9,
+      "font": "Manrope",
+      "weight": 500,
+      "tracking": -0.045,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.33,
+      "top": 1084,
+      "tag": "strong",
+      "kind": "heading"
+     },
+     {
+      "text": "Engineering with a purpose.",
+      "words": 4,
+      "chars": 27,
+      "lines": 2,
+      "size": 33,
+      "vw": 8.5,
+      "font": "Manrope",
+      "weight": 600,
+      "tracking": -0.05,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 1249,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "↗",
+      "words": 1,
+      "chars": 1,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "DM Sans",
+      "weight": 600,
+      "tracking": 0,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.05,
+      "top": 1423,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "↗",
+      "words": 1,
+      "chars": 1,
+      "lines": 1,
+      "size": 23,
+      "vw": 5.9,
+      "font": "DM Sans",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.65,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 1487,
+      "tag": "a",
+      "kind": "heading"
+     },
+     {
+      "text": "Rescue Drone Engineering",
+      "words": 3,
+      "chars": 24,
+      "lines": 1,
+      "size": 25,
+      "vw": 6.4,
+      "font": "Manrope",
+      "weight": 600,
+      "tracking": -0.035,
+      "leading": 1.35,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 1799,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "↗",
+      "words": 1,
+      "chars": 1,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "DM Sans",
+      "weight": 600,
+      "tracking": 0,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.05,
+      "top": 1935,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "↗",
+      "words": 1,
+      "chars": 1,
+      "lines": 1,
+      "size": 23,
+      "vw": 5.9,
+      "font": "DM Sans",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.65,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 2008,
+      "tag": "a",
+      "kind": "heading"
+     },
+     {
+      "text": "Smart Life Jacket",
+      "words": 3,
+      "chars": 17,
+      "lines": 1,
+      "size": 25,
+      "vw": 6.4,
+      "font": "Manrope",
+      "weight": 600,
+      "tracking": -0.035,
+      "leading": 1.35,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 2320,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "↗",
+      "words": 1,
+      "chars": 1,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "DM Sans",
+      "weight": 600,
+      "tracking": 0,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.05,
+      "top": 2482,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "↗",
+      "words": 1,
+      "chars": 1,
+      "lines": 1,
+      "size": 23,
+      "vw": 5.9,
+      "font": "DM Sans",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.65,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 2555,
+      "tag": "a",
+      "kind": "heading"
+     },
+     {
+      "text": "AI, Finance, and the Vietnam Stock Market",
+      "words": 7,
+      "chars": 41,
+      "lines": 2,
+      "size": 25,
+      "vw": 6.4,
+      "font": "Manrope",
+      "weight": 600,
+      "tracking": -0.035,
+      "leading": 1.35,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 2867,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "↗",
+      "words": 1,
+      "chars": 1,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "DM Sans",
+      "weight": 600,
+      "tracking": 0,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.05,
+      "top": 3062,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "See how the systems work.",
+      "words": 5,
+      "chars": 25,
+      "lines": 1,
+      "size": 25,
+      "vw": 6.4,
+      "font": "Manrope",
+      "weight": 600,
+      "tracking": -0.035,
+      "leading": 1.35,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 3196,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "↗",
+      "words": 1,
+      "chars": 1,
+      "lines": 1,
+      "size": 23,
+      "vw": 5.9,
+      "font": "DM Sans",
+      "weight": 500,
+      "tracking": 0,
+      "leading": 1.65,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.04,
+      "top": 3501,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "↗",
+      "words": 1,
+      "chars": 1,
+      "lines": 1,
+      "size": 23,
+      "vw": 5.9,
+      "font": "DM Sans",
+      "weight": 500,
+      "tracking": 0,
+      "leading": 1.65,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.04,
+      "top": 3820,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "Knowledge grows when it is shared.",
+      "words": 6,
+      "chars": 34,
+      "lines": 2,
+      "size": 36,
+      "vw": 9.2,
+      "font": "Manrope",
+      "weight": 600,
+      "tracking": -0.05,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 4371,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "↗",
+      "words": 1,
+      "chars": 1,
+      "lines": 1,
+      "size": 23,
+      "vw": 5.9,
+      "font": "DM Sans",
+      "weight": 600,
+      "tracking": 0,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.04,
+      "top": 4740,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "Milestones in learning.",
+      "words": 3,
+      "chars": 23,
+      "lines": 1,
+      "size": 33,
+      "vw": 8.5,
+      "font": "Manrope",
+      "weight": 600,
+      "tracking": -0.05,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 4915,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "↗",
+      "words": 1,
+      "chars": 1,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "DM Sans",
+      "weight": 600,
+      "tracking": 0,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.05,
+      "top": 4980,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "First Place",
+      "words": 2,
+      "chars": 11,
+      "lines": 1,
+      "size": 27,
+      "vw": 6.9,
+      "font": "Manrope",
+      "weight": 600,
+      "tracking": -0.035,
+      "leading": 1.35,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.71,
+      "top": 5068,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "↗",
+      "words": 1,
+      "chars": 1,
+      "lines": 1,
+      "size": 26,
+      "vw": 6.7,
+      "font": "DM Sans",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.65,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.05,
+      "top": 5070,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "Gold Medal",
+      "words": 2,
+      "chars": 10,
+      "lines": 1,
+      "size": 27,
+      "vw": 6.9,
+      "font": "Manrope",
+      "weight": 600,
+      "tracking": -0.035,
+      "leading": 1.35,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.71,
+      "top": 5223,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "↗",
+      "words": 1,
+      "chars": 1,
+      "lines": 1,
+      "size": 26,
+      "vw": 6.7,
+      "font": "DM Sans",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.65,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.05,
+      "top": 5225,
+      "tag": "span",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 28,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 0,
+     "medianWords": 1,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "DM Sans",
+       "share": 0.83,
+       "mono": false
+      },
+      {
+       "family": "Manrope",
+       "share": 0.17,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      21,
+      23,
+      24,
+      25,
+      26,
+      27,
+      33,
+      36,
+      43
+     ],
+     "sizeCount": 17,
+     "notLoaded": [],
+     "body": {
+      "font": "DM Sans",
+      "size": 16,
+      "leading": 1.6,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 5.7
+     },
+     "measureChars": 41,
+     "max": {
+      "size": 42.9,
+      "vw": 11,
+      "font": "Manrope",
+      "text": "From prototypeto"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 8,
+     "microLabelShare": 0.075,
+     "microSamples": [
+      "Student engineer · Researcher · Builder",
+      "01 / Selected work",
+      "Engineering",
+      "Engineering",
+      "Research",
+      "Inside the prototypes"
+     ],
+     "upperShare": 0.09,
+     "centerShare": 0,
+     "smallText": 5
+    },
+    "eyebrows": [
+     {
+      "text": "Student engineer · Researcher · Builder",
+      "above": "From prototype to public impact.",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 14,
+      "top": 298
+     },
+     {
+      "text": "01 / Selected work",
+      "above": "Engineering with a purpose.",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 14,
+      "top": 1215
+     },
+     {
+      "text": "02 / Initiatives & Impact",
+      "above": "Knowledge grows when it is shared.",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 14,
+      "top": 4333
+     },
+     {
+      "text": "03 / Recognition",
+      "above": "Milestones in learning.",
+      "upper": true,
+      "tracked": true,
+      "mono": false,
+      "pill": false,
+      "size": 14,
+      "top": 4881
+     }
+    ],
+    "numbered": [
+     {
+      "text": "01 / Selected work",
+      "size": 14,
+      "top": 1215
+     },
+     {
+      "text": "02 / Initiatives & Impact",
+      "size": 14,
+      "top": 4333
+     },
+     {
+      "text": "03 / Recognition",
+      "size": 14,
+      "top": 4881
+     }
+    ],
+    "color": {
+     "bodyBg": "#f7f9fb",
+     "bodyBgHsl": {
+      "h": 210,
+      "s": 0.33,
+      "l": 0.98
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#ffffff",
+       "top": 850,
+       "hsl": {
+        "h": 0,
+        "s": 0,
+        "l": 1
+       }
+      },
+      {
+       "color": "#0c293b",
+       "top": 3917,
+       "hsl": {
+        "h": 203,
+        "s": 0.66,
+        "l": 0.14
+       }
+      },
+      {
+       "color": "#e9eff3",
+       "top": 5379,
+       "hsl": {
+        "h": 204,
+        "s": 0.29,
+        "l": 0.93
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#526676",
+       "share": 0.37
+      },
+      {
+       "color": "#0c293b",
+       "share": 0.28
+      },
+      {
+       "color": "#ffffff",
+       "share": 0.14
+      },
+      {
+       "color": "#c5d8e3",
+       "share": 0.11
+      },
+      {
+       "color": "#007d96",
+       "share": 0.04
+      }
+     ],
+     "button": {
+      "bg": "#ffffff",
+      "hsl": {
+       "h": 0,
+       "s": 0,
+       "l": 1
+      },
+      "fg": "#0c293b"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 3,
+     "inHero": 2,
+     "radius": 3,
+     "height": 57,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Skip to content",
+      "Explore my work ↗"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 1,
+     "scrims": 0,
+     "gradientSamples": [
+      "section.container.home-hero → linear-gradient(0deg, rgba(4, 25, 37, 0.94) 0%, rgba(4, 25, 37, 0.72) 52%, rgba(4, 25, 37, 0.18) 100%), url(\"h"
+     ],
+     "gradientText": 0,
+     "hairlines": 12,
+     "hairlineSamples": [
+      "header.site-header 390px",
+      "section.proof-band 390px",
+      "a 350px",
+      "a 350px",
+      "div.card-bottom 350px"
+     ],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 0,
+     "boxRadius": 0,
+     "squareMedia": 1,
+     "roundedMedia": 6,
+     "mediaRadius": 3,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "bg-image",
+      "ratio": 0.9
+     }
+    ],
+    "nav": {
+     "links": 1,
+     "fixed": true,
+     "height": 82,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "dm sans",
+     "manrope"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "pageH": 5850,
+    "margins": {
+     "left": 20,
+     "right": 20
+    },
+    "sections": [
+     {
+      "sel": "section.container.home-hero",
+      "tag": "section",
+      "top": 82,
+      "height": 768,
+      "words": 45,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "From prototype",
+       "size": 43,
+       "tag": "h1"
+      },
+      "left": 20,
+      "right": 23,
+      "textLeft": 20,
+      "textRight": 23,
+      "fullBleed": true,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.proof-band",
+      "tag": "section",
+      "top": 850,
+      "height": 310,
+      "words": 26,
+      "media": 0,
+      "middle": 32,
+      "heading": {
+       "text": "60",
+       "size": 27,
+       "tag": "strong"
+      },
+      "left": 20,
+      "right": 48,
+      "textLeft": 20,
+      "textRight": 48,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.section-heading",
+      "tag": "div",
+      "top": 1215,
+      "height": 244,
+      "words": 16,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Engineering with a purpose.",
+       "size": 33,
+       "tag": "h2"
+      },
+      "left": 20,
+      "right": 86,
+      "textLeft": 20,
+      "textRight": 86,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.featured-grid",
+      "tag": "div",
+      "top": 1487,
+      "height": 1612,
+      "words": 73,
+      "media": 3,
+      "middle": 0,
+      "heading": {
+       "text": "Rescue Drone Engineering",
+       "size": 25,
+       "tag": "h3"
+      },
+      "left": 20,
+      "right": 20,
+      "textLeft": 20,
+      "textRight": 27,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.diagram-previews",
+      "tag": "div",
+      "top": 3136,
+      "height": 726,
+      "words": 21,
+      "media": 2,
+      "middle": 0,
+      "heading": {
+       "text": "See how the systems work.",
+       "size": 25,
+       "tag": "h3"
+      },
+      "left": 20,
+      "right": 20,
+      "textLeft": 20,
+      "textRight": 60,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.impact-section",
+      "tag": "section",
+      "top": 3917,
+      "height": 909,
+      "words": 62,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Knowledge grows",
+       "size": 36,
+       "tag": "h2"
+      },
+      "left": 20,
+      "right": 20,
+      "textLeft": 20,
+      "textRight": 37,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.container.home-recognition",
+      "tag": "section",
+      "top": 4826,
+      "height": 552,
+      "words": 27,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Milestones in learning.",
+       "size": 33,
+       "tag": "h2"
+      },
+      "left": 20,
+      "right": 36,
+      "textLeft": 20,
+      "textRight": 36,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer.site-footer",
+      "tag": "footer",
+      "top": 5379,
+      "height": 472,
+      "words": 32,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 20,
+      "right": 68,
+      "textLeft": 20,
+      "textRight": 68,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "From prototype to public impact.",
+      "size": 43,
+      "top": 339,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 20,
+      "n": 15
+     },
+     {
+      "x": 95,
+      "n": 2
+     },
+     {
+      "x": 65,
+      "n": 1
+     },
+     {
+      "x": 169,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 19,
+    "bodySize": 14,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  }
+ ],
+ "findings": [
+  {
+   "level": "FAIL",
+   "id": "eyebrow",
+   "width": 1440,
+   "message": "5 eyebrow/kicker label(s) above headings: \"Student engineer · Researcher · Builder\" above \"From prototype to public impact.\"; \"01 / Selected work\" above \"Engineering with a purpose.\"; \"Inside the prototypes\" above \"See how the systems work.\"; \"02 / Initiatives & Impact\" above \"Knowledge grows when it is shared.\"; \"03 / Recognition\" above \"Milestones in learning.\"",
+   "fix": "Delete them. If the label carried real information, fold it into the headline or the supporting sentence.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "numbering",
+   "width": 1440,
+   "message": "Decorative index numbers: \"01 / Selected work\", \"02 / Initiatives & Impact\", \"03 / Recognition\"",
+   "fix": "Remove them. If order truly matters, write it into the words (\"First, …\") or use a real <ol>.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "micro-label",
+   "width": 1440,
+   "message": "8 tiny uppercase letter-spaced labels (e.g. \"Student engineer · Researcher · Builder\", \"01 / Selected work\", \"Engineering\", \"Engineering\").",
+   "fix": "Use sentence-case text at a readable size, or delete the label.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "gradient",
+   "width": 1440,
+   "message": "1 gradient fill(s): section.container.home-hero → linear-gradient(90deg, rgba(4, 25, 37, 0.86) 0%, rgba(4, 25, 37, 0.64) 42%, rgba(4, 25, 37, 0.18) 72%, rgba(4,",
+   "fix": "Use a flat colour or a real image. The only gradient allowed by default is a neutral scrim over a photo for legibility.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "hairline",
+   "width": 1440,
+   "message": "10 thin rule(s)/divider line(s): header.site-header 1440px | section.proof-band 1440px | div.card-bottom 395px | div.card-bottom 395px",
+   "fix": "Delete. Separate with space, a tone change, or scale. Lines are only for real tables and form fields.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "size-count",
+   "width": 1440,
+   "message": "17 different font sizes (12, 13, 14, 15, 16, 17, 19, 20, 23, 24, 26, 27, 28, 38, 44, 48, 84).",
+   "fix": "A page needs about five: display, heading, lead, body, small.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "grey-body",
+   "width": 1440,
+   "message": "The running text is a soft grey on its ground (5.7:1).",
+   "fix": "Set body copy in the full ink (7:1 or more). Keep the muted ink for secondary notes; pages read thin and unfinished when everything is grey.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "no-footage",
+   "width": 1440,
+   "message": "No video anywhere on the page.",
+   "fix": "Look for one honest clip with scripts/assets.mjs --video (the place, the material, the process) and use it as a muted loop with a poster frame. Defend its absence only if no clip fits the subject."
+  },
+  {
+   "level": "WARN",
+   "id": "small-text",
+   "width": 1440,
+   "message": "3 text block(s) under 13px.",
+   "fix": "Nothing meant to be read goes below 13px.",
+   "alsoAt": [
+    768
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "still-page",
+   "width": 1440,
+   "message": "Only 0 element(s) moved while the page loaded and scrolled.",
+   "fix": "Build the motion layer (SKILL.md step 9, references/motion.md): the signature move, an entrance for the parts of every section, feedback on every control, and one moving picture. Transform and opacity only, with a reduced-motion fallback."
+  },
+  {
+   "level": "FAIL",
+   "id": "small-text",
+   "width": 390,
+   "message": "5 text blocks under 13px.",
+   "fix": "Nothing meant to be read goes below 13px."
+  }
+ ],
+ "images": [
+  {
+   "viewport": "desktop",
+   "width": 1440,
+   "fold": "D:\\Thakorn_Portfolio_Full_Source\\Thakorn_Portfolio\\.taste-skill\\after-hero\\desktop-fold.jpg",
+   "pages": [
+    "D:\\Thakorn_Portfolio_Full_Source\\Thakorn_Portfolio\\.taste-skill\\after-hero\\desktop-page-01.jpg",
+    "D:\\Thakorn_Portfolio_Full_Source\\Thakorn_Portfolio\\.taste-skill\\after-hero\\desktop-page-02.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "tablet",
+   "width": 768,
+   "fold": "D:\\Thakorn_Portfolio_Full_Source\\Thakorn_Portfolio\\.taste-skill\\after-hero\\tablet-fold.jpg",
+   "pages": [
+    "D:\\Thakorn_Portfolio_Full_Source\\Thakorn_Portfolio\\.taste-skill\\after-hero\\tablet-page-01.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "mobile",
+   "width": 390,
+   "fold": "D:\\Thakorn_Portfolio_Full_Source\\Thakorn_Portfolio\\.taste-skill\\after-hero\\mobile-fold.jpg",
+   "pages": [
+    "D:\\Thakorn_Portfolio_Full_Source\\Thakorn_Portfolio\\.taste-skill\\after-hero\\mobile-page-01.jpg"
+   ],
+   "film": []
+  }
+ ]
+}

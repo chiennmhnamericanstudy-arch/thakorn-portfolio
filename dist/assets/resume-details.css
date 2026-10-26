@@ -1,0 +1,43 @@
+.details-to-add {
+  margin-top: 45px;
+}
+
+.details-to-add h3 {
+  font-size: 28px;
+  margin: 10px 0 20px;
+}
+
+.resume-detail-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.resume-detail-grid article {
+  padding: 21px 22px;
+  background: #edf3f6;
+  border-top: 2px solid #aacbd7;
+}
+
+.resume-detail-grid h4 {
+  margin: 0 0 9px;
+  font: 600 17px/1.4 var(--display);
+  letter-spacing: -.02em;
+}
+
+.resume-detail-grid p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.75;
+}
+
+@media (max-width: 650px) {
+  .details-to-add {
+    margin-top: 30px;
+  }
+
+  .resume-detail-grid {
+    grid-template-columns: 1fr;
+  }
+}

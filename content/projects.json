@@ -1,0 +1,1102 @@
+[
+  {
+    "slug": "rescue-drone-engineering",
+    "title": "Rescue Drone Engineering",
+    "category": "Engineering",
+    "role": "Founder & Lead Engineer",
+    "date": "Feb 2025 – Oct 2025",
+    "status": "Field-tested prototype",
+    "image": "drone-field",
+    "alt": "Thakorn operating a drone during an outdoor test beside the sea.",
+    "caption": "Outdoor flight testing on the coast.",
+    "summary": "Aerial support for emergency supply delivery and search-and-rescue operations.",
+    "overview": "I designed, built, and iterated a rescue-drone prototype to explore how aerial systems can support emergency supply delivery and search and rescue. I focused on stability, endurance, payload performance, control response, and communication reliability.",
+    "process": [
+      [
+        "Build and integrate",
+        "I developed the mechanical and electrical prototype, connecting flight control, camera-based perception, and a ground station. The report documents the architecture and software workflow below."
+      ],
+      [
+        "Test and revise",
+        "I completed 60 laboratory test flights and three outdoor field trials in Vung Tau and Dong Nai, using observations from each round to guide revisions."
+      ],
+      [
+        "Connect perception and response",
+        "The system combines person detection, pose analysis, and time-based alert logic with map-based telemetry to support rescue coordination."
+      ]
+    ],
+    "metrics": [
+      [
+        "60",
+        "Laboratory flights"
+      ],
+      [
+        "3",
+        "Outdoor field trials"
+      ],
+      [
+        "20–30 min",
+        "Reported flight time"
+      ],
+      [
+        "~3 km",
+        "Reported RC range"
+      ]
+    ],
+    "note": "The project also explored extended control through 4G connectivity. The drone remains a prototype; the reported operating figures describe the development work rather than a guaranteed rescue capability.",
+    "details": [
+      [
+        "Flight performance",
+        "The prototype achieved 20–30 minutes of flight time and an approximately 3 km RC range, with extended control explored through 4G connectivity."
+      ],
+      [
+        "Payload design limit",
+        "The technical report sets a maximum cargo weight of 5 kg within the project’s design scope. This is the documented design limit, rather than a measured payload result."
+      ]
+    ],
+    "missing": [
+      "Payload capacity and test configuration",
+      "Detection evaluation dataset and validation details"
+    ],
+    "skills": [
+      "Drone prototyping",
+      "Systems integration",
+      "Flight testing",
+      "Computer vision"
+    ],
+    "evidence": [
+      [
+        "Read the project report",
+        "/documents/Rescue-Drone-Project-Report.pdf"
+      ]
+    ],
+    "secondary": [
+      "drone-prototype",
+      "Thakorn holding the rescue-drone prototype on a sports field.",
+      "The assembled prototype during development."
+    ],
+    "gallery": [
+      [
+        "drone-flight-payload",
+        "A drone in flight carrying an orange flotation device above an open field.",
+        "Outdoor testing with a flotation device attached to the prototype."
+      ]
+    ],
+    "diagram": {
+      "image": "rescue-drone-operation",
+      "title": "Rescue drone: flight and control",
+      "alt": "Supplied rescue-drone diagram showing GNSS, onboard camera, flight functions, payload design limit, waypoint navigation, and test iterations.",
+      "caption": "Flight-control architecture and test sequence. The technical report specifies a 5 kg maximum cargo weight within the design scope; it does not present a controlled payload-validation dataset."
+    },
+    "technical": {
+      "title": "From camera input to a rescue alert",
+      "intro": "The report connects mechanical design, flight control, onboard vision, and a ground-station interface into one prototype. The central engineering problem is turning a moving camera’s observations into an actionable location alert.",
+      "subsystems": [
+        [
+          "Airframe & flight",
+          "An F650-based quadcopter modeled in SolidWorks combines a Pixhawk flight controller, GPS and inertial sensing, a Raspberry Pi, and a camera. The report describes PID attitude control, GPS-waypoint missions, and return-to-home landing."
+        ],
+        [
+          "Perception & tracking",
+          "YOLOv5 identifies people, SORT maintains tracks across frames, and MediaPipe Pose estimates body landmarks for each tracked person."
+        ],
+        [
+          "Behavior over time",
+          "The software examines an arm raised above the head, wrist movement, and elbow-angle changes. A timed state machine escalates persistent trigger conditions instead of relying on one video frame."
+        ],
+        [
+          "Operator interface",
+          "A Flask application with SocketIO brings together live video, a Leaflet map, waypoints, flight telemetry, and location alerts. The report describes mission pausing and coordinate transmission after an SOS trigger."
+        ]
+      ],
+      "workflow_title": "How the alert logic works",
+      "workflow": [
+        [
+          "Detect & follow",
+          "Find people in the camera feed and maintain a track for each person."
+        ],
+        [
+          "Inspect the pose",
+          "Compare wrist and head positions; calculate motion features from recent observations."
+        ],
+        [
+          "Require persistence",
+          "The report’s intermediate FROZEN state begins after 1.5 seconds; SOS begins after 3 seconds of a persistent trigger. These are software settings for the prototype."
+        ],
+        [
+          "Inform the operator",
+          "Display the alert state and relay location information to the monitoring station for human follow-up."
+        ]
+      ],
+      "figures": [
+        [
+          "drone-pose-states",
+          "Report Figure 34 showing ACTIVE, FROZEN, and SOS pose overlays.",
+          "Pose-state demonstration from the report (Figure 34). The pictured demonstration is on land; it is not evidence of a real drowning rescue."
+        ],
+        [
+          "drone-monitoring-interface",
+          "Report Figure 36 showing flight telemetry and mission-control buttons.",
+          "Ground-station interface from the report (Figure 36), combining telemetry, mission settings, and flight controls."
+        ]
+      ],
+      "evaluation": {
+        "title": "What the report evaluates",
+        "intro": "Chapter 5 reports the following observations. The report does not supply the raw evaluation dataset, sample counts, or a complete test protocol, so these figures are presented as report-stated results.",
+        "columns": [
+          "Reported observation",
+          "Value in the report",
+          "Evaluation context"
+        ],
+        "rows": [
+          [
+            "GPS waypoint following",
+            "Typical path deviation under 0.6 m",
+            "Chapter 5 describes comparison with the planned GPS path using telemetry and mapped flight tracks."
+          ],
+          [
+            "Person detection",
+            "Over 95% in controlled tests",
+            "Reported for controlled person-detection tests using the vision and tracking pipeline."
+          ],
+          [
+            "Distress recognition",
+            "False-positive rate below 5%",
+            "Reported for the pose-and-time-based distress-recognition logic; separate from person detection."
+          ]
+        ]
+      },
+      "followup_title": "Questions guiding the next iteration",
+      "followup": "The report identifies crowded scenes, weather and visibility, battery life, and onboard computation as constraints. A stronger evaluation would separate person detection from distress recognition, record false alarms across different conditions, and document the tested payload configuration.",
+      "source_note": "Technical description: Rescue Drone Project Report, Chapters 3–6 and Figures 34–36."
+    },
+    "photo_stories": [
+      {
+        "id": "field-testing",
+        "eyebrow": "Field testing & demonstration",
+        "title": "From coastal trials to shared learning",
+        "intro": "Testing the drone above coastal water, presenting the assembled prototype, and sharing the field setup with students.",
+        "gallery_class": "preserve-frame field-test-gallery",
+        "images": [
+          [
+            "drone-coastal-water-test",
+            "A drone flying above coastal water, with a swimmer and an orange flotation device below.",
+            "Coastal test scene with the drone, a swimmer, and a flotation device."
+          ],
+          [
+            "drone-coastal-prototype",
+            "Thakorn holding the assembled drone above his head on a beach beside a fishing boat.",
+            "With the assembled rescue-drone prototype at the coastal test site."
+          ],
+          [
+            "drone-waterside-prototype",
+            "Thakorn holding a quadcopter and radio controller beside the water.",
+            "A closer look at the prototype and its radio controller."
+          ],
+          [
+            "drone-field-student-guidance",
+            "Thakorn and a student looking at a laptop in an outdoor setup, with a drone and flotation equipment nearby.",
+            "Sharing the laptop-based field setup with a student."
+          ],
+          [
+            "drone-community-demonstration",
+            "Thakorn holding a drone and an orange life jacket while standing with a group of students outdoors.",
+            "Introducing the drone and rescue equipment to students."
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "smart-life-jacket",
+    "title": "Smart Life Jacket",
+    "category": "Engineering",
+    "role": "Founder & Lead Engineer",
+    "date": "Mar 2026 – Aug 2026",
+    "status": "Engineering prototype",
+    "image": "smartvest",
+    "contain": true,
+    "alt": "Annotated prototype photograph showing the life jacket, solar panel, electronics enclosure, LoRa antenna, and buoyant supports.",
+    "caption": "Integrated prototype, reproduced from the SMARTVEST-SAR project report.",
+    "summary": "GPS tracking, radio communication, and wind-informed drift prediction for water-rescue coordination.",
+    "overview": "I developed a smart life-jacket prototype for water emergencies and flood-response scenarios. The system connects a wearable GPS and LoRa node, intermediate radio relays, and a Python rescue-station application. Its broader design goal is to help coordinate position information with drone-supported rescue.",
+    "process": [
+      [
+        "Locate and transmit",
+        "The wearable firmware acquires GPS positions, buffers packets, and retains unacknowledged messages for retransmission over LoRa."
+      ],
+      [
+        "Relay and visualize",
+        "Intermediate nodes demonstrate store-and-forward communication. The Python application receives packets, plots recent positions, and retrieves local wind information."
+      ],
+      [
+        "Estimate drift",
+        "The current predictor combines recent GPS movement with wind direction using an explainable heuristic. It generates a possible short-term path; it is not a trained machine-learning model."
+      ]
+    ],
+    "metrics": [],
+    "note": "The prototype includes solar-assisted power and temperature-triggered heating logic. Radio range, battery endurance, thermal performance, and drift-prediction accuracy remain to be validated. It is an educational engineering prototype, not certified rescue equipment.",
+    "details": [
+      [
+        "Role and development period",
+        "Founder & Lead Engineer, March–August 2026."
+      ],
+      [
+        "Intended rescue context",
+        "The system combines location tracking and drift-direction prediction to support coordination with rescue drones during water emergencies and flood-response operations."
+      ]
+    ],
+    "missing": [
+      "Measured radio range and packet-delivery results",
+      "Battery runtime and prediction-error measurements",
+      "Detailed individual hardware and software contributions"
+    ],
+    "skills": [
+      "Embedded systems",
+      "GPS & LoRa",
+      "Python / Tkinter",
+      "Data visualization",
+      "Prototype integration"
+    ],
+    "evidence": [
+      [
+        "Read the SMARTVEST-SAR report",
+        "/documents/SmartVest-SAR-Project-Report.pdf"
+      ]
+    ],
+    "mentor": "Associate Professor Dr. Le My Ha",
+    "diagram": {
+      "image": "smartvest-operation",
+      "title": "SmartVest-SAR: tracking, communication, and power",
+      "alt": "Supplied SmartVest-SAR diagram showing the GPS and wind-informed drift workflow, LoRa data packets, solar-assisted power, and prototype test stages.",
+      "caption": "The supplied system diagram brings together tracking, radio communication, and power. The approximately 8 km LoRa hop shown is a design target, and the diagram identifies settings that still require validation."
+    },
+    "technical": {
+      "title": "A wearable node, a radio relay, and a rescue-station app",
+      "intro": "SMARTVEST-SAR is an integrated engineering prototype. Its report traces the wearable firmware, intermediate relay firmware, and Python application to show how location data move from the jacket to an operator.",
+      "subsystems": [
+        [
+          "Wearable sensing",
+          "The embedded firmware parses GPS fixes with TinyGPS++, reads a temperature sensor, and queues position messages. The code uses a 5-second GPS timer for bench testing and formats each packet as a device identifier plus latitude and longitude."
+        ],
+        [
+          "LoRa communication",
+          "The jacket sends the oldest queued message and waits up to one second for an “ok” acknowledgement. Unacknowledged messages remain queued for a later retry."
+        ],
+        [
+          "Intermediate relay",
+          "A relay stores unique received messages, forwards the oldest entry, and removes it after acknowledgement. This implements store-and-forward behavior; dynamic mesh routing remains a future step."
+        ],
+        [
+          "Rescue-station software",
+          "A Python/Tkinter application receives serial data in a background thread, acknowledges messages, removes duplicates, plots coordinates, and retrieves wind information through Open-Meteo."
+        ],
+        [
+          "Solar-assisted power",
+          "The integrated vest carries a solar panel and a lithium-battery subsystem. Solar charging is intended to supplement stored energy; continuous energy autonomy is not established by the report."
+        ],
+        [
+          "Temperature-triggered output",
+          "The firmware enables the heater output below a measured 25 °C and disables it at or above that value. This is a prototype control setting; independent thermal protection and fault-response testing are identified as further work."
+        ]
+      ],
+      "workflow_title": "How the drift estimate is formed",
+      "workflow": [
+        [
+          "Observe recent movement",
+          "Use the two latest GPS positions to estimate a recent movement direction."
+        ],
+        [
+          "Add wind context",
+          "Combine recent movement (70%), a weighted average of up to five wind-direction samples (20%), and current wind direction (10%)."
+        ],
+        [
+          "Plot a possible continuation",
+          "Generate 20 future markers, gradually turning toward the target direction. These weights and the marker count are configured heuristics, not learned parameters."
+        ],
+        [
+          "Compare with a later measured track",
+          "The report proposes comparing predicted positions with a later recorded GPS track. It documents the prediction algorithm and visualization, while identifying quantitative prediction testing as a next step."
+        ]
+      ],
+      "figures": [
+        [
+          "smartvest-wearable-firmware",
+          "Flowchart from report Figure 3.2 showing temperature sensing, GPS buffering, LoRa transmission, and acknowledgement retries.",
+          "Wearable firmware flow (report Figure 3.2). The 5-second GPS timer is a bench setting; the intended 5-minute reporting interval remains a design choice to test."
+        ],
+        [
+          "smartvest-relay-firmware",
+          "Flowchart from report Figure 3.3 showing duplicate checking and queued forwarding through an intermediate LoRa relay.",
+          "Relay firmware flow (report Figure 3.3). Duplicate checking and acknowledgement-based forwarding are implemented; a complete mesh protocol is not."
+        ]
+      ],
+      "evaluation": {
+        "title": "Implementation and validation",
+        "intro": "The report provides a prototype photograph and code-level descriptions. It separates those implementation details from field performance that still needs measurement.",
+        "columns": [
+          "Subsystem",
+          "Supported by the report",
+          "Current validation status"
+        ],
+        "rows": [
+          [
+            "GPS & radio",
+            "Position parsing, packet queue, acknowledgement, retry, and relay logic.",
+            "The approximately 8 km hop is a design target. Measured range, packet-delivery rate, and relay latency are not reported."
+          ],
+          [
+            "Solar-assisted power",
+            "A solar panel is visible on the integrated jacket; a battery subsystem is described.",
+            "Battery endurance and solar energy recovery have not been quantified in the report."
+          ],
+          [
+            "Temperature control",
+            "Firmware switches a heater output at a 25 °C sensor threshold.",
+            "The 25 °C value is a firmware setting. Independent surface-temperature and fault-response measurements are not reported."
+          ],
+          [
+            "Drift visualization",
+            "A deterministic movement-and-wind heuristic produces a projected path.",
+            "The report’s trajectory illustration is a software example. No measured prediction error against field tracks is reported."
+          ]
+        ]
+      },
+      "followup_title": "Design choices to improve",
+      "followup": "The report proposes packet sequence numbers and timestamps, a bounded buffer, relay hop limits, independent thermal protection, and a measured energy budget. The approximately 8 km radio hop in the system diagram is a target awaiting field validation.",
+      "source_note": "Technical description: SMARTVEST-SAR report, Chapter 3, Sections 4.3–4.9, Chapter 5, and Appendix A. Coordination with rescue drones is the broader design goal; the report documents the wearable, relay, and desktop prototype."
+    },
+    "photo_stories": [
+      {
+        "id": "field-testing",
+        "eyebrow": "Prototype in use",
+        "title": "Wearable and on-water demonstrations",
+        "intro": "Outdoor demonstrations of the smart life-jacket prototype, including its wearable electronics and use while rowing a small boat.",
+        "gallery_class": "preserve-frame field-test-gallery",
+        "images": [
+          [
+            "smartvest-rowing-test",
+            "A participant wearing the orange smart life-jacket prototype while rowing a small boat on the water.",
+            "On-water demonstration of the prototype during a rowing activity."
+          ],
+          [
+            "smartvest-wearable-demonstration",
+            "A participant wearing the smart life-jacket prototype beside the water, with attached electronics and wiring visible.",
+            "The wearable configuration, with attached electronics and wiring visible."
+          ],
+          [
+            "smartvest-boat-closeup",
+            "A closer view of a participant wearing the smart life-jacket prototype in a rowing boat.",
+            "A closer view of the vest and attached modules during the boat demonstration."
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "wro-2026-project",
+    "title": "World Robot Olympiad 2026",
+    "category": "Engineering",
+    "role": "Robot Assembly Lead",
+    "date": "2026",
+    "status": "National round completed",
+    "image": "wro-award-banner",
+    "preserve_frame": true,
+    "alt": "The robotics team on stage holding a First Place award board and a Kid Engineer flag.",
+    "caption": "Celebrating First Place at the national-round award ceremony.",
+    "summary": "Team KE GATE · RoboSports, Double Tennis · First Place at the Vietnam National Round.",
+    "overview": "As Robot Assembly Lead for team KE GATE, I competed in RoboSports on the Double Tennis challenge. Our team earned First Place at the World Robot Olympiad Vietnam National Round in 2026 and advanced to the International Round in Puerto Rico, scheduled for December 2026.",
+    "process": [],
+    "metrics": [],
+    "note": "The international round is upcoming. No international-round result is claimed.",
+    "details": [
+      [
+        "National result",
+        "First Place, World Robot Olympiad Vietnam National Round, 2026 · RoboSports, Double Tennis · Team KE GATE."
+      ],
+      [
+        "International progression",
+        "Advanced to the International Round in Puerto Rico, scheduled for December 2026. No international result is claimed before the event."
+      ],
+      [
+        "Robot assembly",
+        "Led assembly of the KE GATE competition robot for the RoboSports Double Tennis challenge."
+      ]
+    ],
+    "missing": [
+      "Robot design and assembly details",
+      "Official national-round result link"
+    ],
+    "skills": [
+      "Robotics",
+      "Robot assembly",
+      "Teamwork"
+    ],
+    "evidence": [],
+    "gallery": [
+      [
+        "wro-award",
+        "The WRO team receiving its First Place award on stage at the Vietnam National Round.",
+        "Receiving First Place at the World Robot Olympiad Vietnam National Round, 2026."
+      ],
+      [
+        "wro-collaboration",
+        "Students reviewing a laptop and the robot field during WRO activities.",
+        "Reviewing the robot field and control setup during WRO activities."
+      ],
+      [
+        "wro-robot-field",
+        "Students and instructors gathered around robots on the competition field.",
+        "Working with the robot field during the national competition."
+      ],
+      [
+        "wro-team-stage",
+        "The robotics team and event representatives standing together on stage with awards.",
+        "Sharing the award-ceremony moment with the team."
+      ],
+      [
+        "wro-first-place-portrait",
+        "A student holding the First Place award board inside the competition venue.",
+        "With the First Place award after the national round."
+      ]
+    ]
+  },
+  {
+    "slug": "ai-vietnam-stock-market",
+    "title": "AI, Finance, and the Vietnam Stock Market",
+    "category": "Research",
+    "role": "SVIIF Team Leader",
+    "date": "2025",
+    "status": "SVIIF Gold Medal",
+    "image": "portrait",
+    "alt": "Thakorn presenting the AI, Finance, and the Vietnam Stock Market poster at SVIIF.",
+    "caption": "Presenting the AI and Vietnam stock-market research poster at SVIIF.",
+    "summary": "Investigating market signals, portfolio constraints, and risk through applied machine learning.",
+    "overview": "As team leader, I directed an AI-driven study of Vietnam’s stock market, from data collection and model training to backtesting and presentation. The project received a Gold Medal at the Silicon Valley International Invention Festival in 2025.",
+    "process": [
+      [
+        "Prepare the data",
+        "We collected 600 days of historical VPS API data for VIC, VNM, and VCB. The VIC prediction experiment used 10-day and 30-day moving averages, price change, daily price range, and lagged volume."
+      ],
+      [
+        "Model and backtest",
+        "The VIC experiment used a Decision Tree with a maximum depth of five and a 70% training / 30% test split. A daily price decline of at least 5% forced the predicted signal to ‘no buy’."
+      ],
+      [
+        "Account for constraints",
+        "Historical Value-at-Risk and portfolio-weight constraints were studied alongside Vietnam-specific trading assumptions, including settlement delays and daily price limits."
+      ]
+    ],
+    "metrics": [
+      [
+        "600",
+        "Days of historical data"
+      ],
+      [
+        "3",
+        "Core stock datasets"
+      ],
+      [
+        "Gold",
+        "SVIIF · 2025"
+      ]
+    ],
+    "note": "The poster presents separate prediction, allocation, and historical-backtesting experiments. Their results are shown by configuration below; expected returns from a backtest are not realized investment returns.",
+    "details": [
+      [
+        "Data scope",
+        "The poster documents 600 days of VPS API data for VIC, VNM, and VCB, with moving-average, price-change, price-range, and lagged-volume features for the VIC prediction task."
+      ],
+      [
+        "Leadership and evaluation workflow",
+        "As SVIIF Team Leader, Thakorn directed model training, backtesting, and presentation, evaluating Decision Tree signals with a 5% stop-loss, historical Value-at-Risk, and portfolio-weight constraints."
+      ]
+    ],
+    "research_results": {
+      "title": "Selected experiments from the poster",
+      "intro": "Each row refers to a distinct experiment. The classifier accuracy, stock allocations, and strategy-backtest figures should be read in their own settings.",
+      "columns": [
+        "Experiment",
+        "Method and scope",
+        "Poster-reported result"
+      ],
+      "rows": [
+        [
+          "VIC price-direction prediction",
+          "Decision Tree, maximum depth 5; 70% training / 30% test split; 5% price-drop filter.",
+          "44% classification accuracy."
+        ],
+        [
+          "VIC / VNM / VCB allocation",
+          "Sharpe-ratio optimization with a maximum of 40% per stock and weights totaling 100%.",
+          "VIC 35.5% · VNM 40.0% · VCB 24.5%."
+        ],
+        [
+          "Historical risk estimate",
+          "Historical Value-at-Risk at 95% confidence for a hypothetical VND 100 million portfolio.",
+          "The poster reports a 95% VaR of approximately −VND 3,049,146."
+        ],
+        [
+          "Technical-strategy backtest",
+          "HPG, FPT, and VJC daily prices; comparison of MACD, RSI, Bollinger Bands, moving-average crossover, and Stochastic strategies.",
+          "The strategy-optimization panel reports expected return 17.54%, volatility 19.03%, and Sharpe ratio 0.921."
+        ]
+      ],
+      "source_note": "Source: AI, Finance, and the Vietnam Stock Market poster — Decision Tree + Stop-Loss, Portfolio Optimization with Risk Controls, Risk Analysis with Value-at-Risk, and Strategy Backtesting & Optimization panels."
+    },
+    "missing": [],
+    "skills": [
+      "Python",
+      "Feature engineering",
+      "Decision Trees",
+      "Backtesting",
+      "Risk analysis"
+    ],
+    "evidence": [
+      [
+        "View the research poster",
+        "/documents/SVIIF-AI-Finance-Poster.pdf"
+      ]
+    ],
+    "secondary": [
+      "sviif-award",
+      "Thakorn holding an award certificate and medal at the Silicon Valley International Invention Festival.",
+      "Recognition at the Silicon Valley International Invention Festival."
+    ],
+    "gallery": [
+      [
+        "sviif-delegation",
+        "Participants posing with Vietnamese flags at the Silicon Valley International Invention Festival.",
+        "With fellow participants at the Silicon Valley International Invention Festival."
+      ]
+    ]
+  },
+  {
+    "slug": "gas-turbine-compressor-optimization",
+    "title": "Gas Turbine Compressor Optimization",
+    "category": "Research",
+    "role": "Co-Author",
+    "date": "[CẦN BỔ SUNG]",
+    "status": "Research collaboration",
+    "image": null,
+    "summary": "Deep-learning-based, multi-objective optimization of slotted casing designs for a small gas turbine compressor.",
+    "overview": "Working with research mentor Phan Minh Hien, PhD, I collaborated on a study applying deep learning to the optimization of slotted casing designs for a small gas turbine engine compressor. My contributions included research synthesis, model evaluation, and technical manuscript development.",
+    "formal_title": "Multi-Objective Optimization Using Deep Learning for Slotted Casing Design in a Small Gas Turbine Engine Compressor",
+    "process": [],
+    "metrics": [],
+    "note": "The research explores the challenge of balancing multiple engineering objectives while communicating model assumptions and results with technical precision.",
+    "details": [
+      [
+        "Research role",
+        "Co-Author working with research mentor Phan Minh Hien, PhD."
+      ],
+      [
+        "Individual contribution",
+        "Contributed to research synthesis, model evaluation, and technical manuscript development for the deep-learning-based multi-objective optimization study."
+      ]
+    ],
+    "missing": [
+      "Project dates and research institution",
+      "Key findings and publication status",
+      "Approved manuscript or abstract"
+    ],
+    "skills": [
+      "Deep learning",
+      "Engineering optimization",
+      "Model evaluation",
+      "Technical writing"
+    ],
+    "evidence": [],
+    "mentor": "Phan Minh Hien, PhD"
+  },
+  {
+    "slug": "atomic-bomb-hpq",
+    "title": "Science, History & Responsibility",
+    "category": "Research",
+    "role": "Independent Researcher",
+    "date": "Jan 2025 – Jul 2025",
+    "status": "Higher Project Qualification",
+    "image": null,
+    "summary": "An independent, 2,000-word study of the atomic bomb through scientific, historical, and ethical perspectives.",
+    "overview": "I produced a 2,000-word Higher Project Qualification paper examining the atomic bomb through three connected lenses: the underlying science, its historical development and use, and the ethical questions created by its impact.",
+    "formal_title": "Atomic Bomb Research Project",
+    "process": [
+      [
+        "Research across disciplines",
+        "I evaluated and synthesized sources across science, history, and ethics."
+      ],
+      [
+        "Communicate with care",
+        "The project required careful separation of technical explanation from moral analysis."
+      ]
+    ],
+    "metrics": [
+      [
+        "2,000",
+        "Words in the HPQ paper"
+      ]
+    ],
+    "details": [
+      [
+        "Format and timeline",
+        "A 2,000-word Higher Project Qualification paper completed as an independent research project from January to July 2025."
+      ],
+      [
+        "Research scope",
+        "The paper examines the atomic bomb through scientific, historical, and ethical perspectives."
+      ]
+    ],
+    "missing": [
+      "Final research question and central argument",
+      "Approved paper or excerpt"
+    ],
+    "skills": [
+      "Independent research",
+      "Source evaluation",
+      "Scientific writing",
+      "Ethical analysis"
+    ],
+    "evidence": []
+  },
+  {
+    "slug": "stem-gears",
+    "title": "STEM GEARS",
+    "category": "Entrepreneurship",
+    "role": "Founder | STEM GEARS Startup",
+    "date": "Sep 2025 – Present",
+    "status": "Ongoing venture",
+    "image": "stem-gears",
+    "alt": "Close view of a 3D-printed cutaway aircraft-engine model, with internal compressor and turbine components visible.",
+    "caption": "A STEM GEARS cutaway aircraft-engine model.",
+    "summary": "Making mechanical engineering and propulsion tangible for younger learners.",
+    "overview": "I founded STEM GEARS, a small educational venture producing 3D-printed cutaway aircraft-engine models and STEM kits. By translating internal engine structures into tangible, inspectable learning tools, the venture makes mechanics and propulsion more accessible to younger students.",
+    "process": [
+      [
+        "Design for understanding",
+        "I developed ten distinct product models, exposing internal aircraft-engine structures for hands-on STEM learning."
+      ],
+      [
+        "Bring the models to learners",
+        "The venture sold 60 educational products and generated VND 100 million in revenue."
+      ],
+      [
+        "Connect enterprise with service",
+        "The full VND 100 million in revenue was donated to Creativism Club and SafeFlow Vietnam, supporting community-focused initiatives."
+      ]
+    ],
+    "metrics": [
+      [
+        "10",
+        "Product models"
+      ],
+      [
+        "60",
+        "Products sold"
+      ],
+      [
+        "VND 100m",
+        "Revenue, fully donated"
+      ]
+    ],
+    "details": [
+      [
+        "Product development",
+        "Developed ten 3D-printed aircraft-engine cutaway models and STEM kits to make mechanics and propulsion accessible to younger students."
+      ],
+      [
+        "Venture and community impact",
+        "STEM GEARS sold 60 products and generated VND 100 million in revenue; the full amount was donated to Creativism Club and SafeFlow Vietnam."
+      ]
+    ],
+    "missing": [
+      "Product catalog and customer feedback",
+      "Sales summary and donation allocation records"
+    ],
+    "skills": [
+      "3D modeling",
+      "3D printing",
+      "Product design",
+      "STEM education",
+      "Entrepreneurship"
+    ],
+    "evidence": [],
+    "secondary": [
+      "stem-conversation",
+      "Thakorn discussing an engine model with another participant at a table.",
+      "Explaining the structure of an educational engine model."
+    ],
+    "gallery": [
+      [
+        "stem-model-maker",
+        "Thakorn holding a cutaway aircraft-engine model with its internal parts visible.",
+        "Turning an aircraft-engine cross-section into a model that learners can hold and inspect."
+      ]
+    ]
+  },
+  {
+    "slug": "safeflow-vietnam",
+    "title": "SafeFlow Vietnam",
+    "category": "Community Impact",
+    "role": "Founder & President",
+    "date": "Feb 2025 – Present",
+    "status": "Ongoing initiative",
+    "image": "safeflow-model-building",
+    "preserve_frame": true,
+    "alt": "A volunteer and a child assembling a small model boat in the Suoi Tuong floating classroom.",
+    "caption": "Building a model together at the Suoi Tuong floating classroom.",
+    "summary": "Connecting water safety, STEM learning, and practical support for flood-prone communities.",
+    "overview": "I founded SafeFlow Vietnam to connect water-safety education, introductory STEM learning, and practical support for communities affected by water risk. I led two field programs in Y Tý, Lào Cai, a highland community exposed to recurring flash floods and landslides, and Suối Tượng, Đồng Nai, where families live in floating homes and daily life is closely tied to the water.",
+    "process": [
+      [
+        "Learn from the setting",
+        "Each location shaped the program: Suối Tượng highlighted everyday life on the water, while Y Tý brought attention to the recurring risks of flash floods and landslides."
+      ],
+      [
+        "Teach and support",
+        "Activities combined water-safety education, hands-on STEM introductions, and the distribution of safety equipment and school supplies."
+      ],
+      [
+        "Mobilize resources",
+        "The two programs served approximately 200 students and residents, with more than VND 50 million mobilized in aid and programming."
+      ]
+    ],
+    "metrics": [
+      [
+        "2",
+        "Field programs"
+      ],
+      [
+        "~200",
+        "Students & residents served"
+      ],
+      [
+        ">VND 50m",
+        "Aid & programming"
+      ]
+    ],
+    "details": [
+      [
+        "Program reach",
+        "Led two field programs serving approximately 200 students and residents in Y Tý, Lào Cai, and Suối Tượng floating village, Đồng Nai, with more than VND 50 million mobilized in aid and programming."
+      ],
+      [
+        "Delivery scope",
+        "SafeFlow delivered water-safety education and introductory STEM activities, distributed safety equipment and school supplies, and connected rescue-drone and smart-life-jacket concepts with needs identified in flood-prone communities."
+      ]
+    ],
+    "missing": [
+      "Field-program dates and local partners",
+      "Itemized funding and follow-up outcomes"
+    ],
+    "skills": [
+      "Community leadership",
+      "Water-safety education",
+      "STEM outreach",
+      "Program delivery"
+    ],
+    "evidence": [
+      [
+        "SafeFlow Vietnam project page",
+        "https://www.facebook.com/SafeFlowVietnam"
+      ]
+    ],
+    "secondary": [
+      "safeflow-field",
+      "Thakorn traveling by boat during the Suoi Tuong field visit.",
+      "From the Suoi Tuong floating-village field program."
+    ],
+    "gallery": [
+      [
+        "safeflow-floating-village",
+        "Participants in a boat carrying orange life jackets beside a floating building.",
+        "Traveling through the Suoi Tuong floating-village setting."
+      ]
+    ],
+    "photo_stories": [
+      {
+        "id": "suoi-tuong",
+        "eyebrow": "Why Suối Tượng",
+        "title": "Suối Tượng · Learning in a floating community",
+        "intro": "Suối Tượng is a waterside community where families live in floating homes. This close connection to boats and the water made it a meaningful setting for SafeFlow’s work. The program paired water-safety learning with model assembly, classroom demonstrations, and a model-boat test at the water’s edge.",
+        "images": [
+          [
+            "safeflow-stem-demo",
+            "A volunteer demonstrating model parts to children in the floating classroom at Suoi Tuong.",
+            "Introducing the model and its parts before assembly."
+          ],
+          [
+            "safeflow-classroom-activity",
+            "Children taking part in activities around tables in the Suoi Tuong floating classroom.",
+            "Classroom participation during the community program."
+          ],
+          [
+            "safeflow-model-boat-test",
+            "A small model boat being tested in the water beside the floating classroom.",
+            "Taking the assembled model to the water for a float test."
+          ],
+          [
+            "safeflow-waterside-testing",
+            "A volunteer lowering a model boat into the water as a child watches beside him.",
+            "Exploring the model together at the water’s edge."
+          ]
+        ]
+      },
+      {
+        "id": "y-ty",
+        "eyebrow": "Why Y Tý",
+        "title": "Y Tý · Learning for a more prepared community",
+        "intro": "Y Tý is a mountainous commune in northern Vietnam near the Chinese border, where heavy rains bring recurring risks of flash floods and landslides. SafeFlow chose this location because water-safety awareness and practical problem-solving are especially relevant to the community. At the local school, the program combined hands-on STEM learning, safety education, and practical support for students.",
+        "images": [
+          [
+            "safeflow-yty-181618",
+            "Thakorn standing on a path overlooking the mountainous landscape around Y Tý.",
+            "The highland setting that shaped the context for SafeFlow’s visit."
+          ],
+          [
+            "safeflow-yty-095610",
+            "Thakorn standing among students during a classroom activity in Y Tý.",
+            "Moving between desks to support students during the workshop."
+          ],
+          [
+            "safeflow-yty-080953",
+            "Thakorn guiding students as they assemble wooden STEM models at a classroom table in Y Tý.",
+            "Guiding students through the model-building process."
+          ],
+          [
+            "safeflow-yty-084647",
+            "A student presenting a completed wooden model while volunteers continue the workshop behind her.",
+            "A student shares the model she completed during the activity."
+          ],
+          [
+            "safeflow-yty",
+            "Thakorn kneeling in front of students holding their completed STEM models outside a classroom in Y Tý.",
+            "Completing a hands-on STEM activity with students in Y Tý."
+          ],
+          [
+            "safeflow-school-group",
+            "Students and volunteers standing together outside a classroom in Y Tý with completed STEM models.",
+            "Students and volunteers at the close of the Y Tý field program."
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "droneverse",
+    "title": "Creativism Club",
+    "category": "Community Impact",
+    "role": "President",
+    "date": "Jun 2025 – Present",
+    "status": "Club leadership",
+    "image": "droneverse-speaker",
+    "alt": "Thakorn speaking into a microphone beside a projected DRONEVERSE title slide.",
+    "caption": "Sharing the process behind student engineering at DRONEVERSE.",
+    "summary": "Public exhibitions and community CS & STEM programs that make technology accessible.",
+    "overview": "As president of the 30-member Creativism Club, I connect student engineering with public learning and community outreach. I directed DRONEVERSE, a drone exhibition in Ho Chi Minh City that reached 500 people, and co-organized a CS & STEM program for 30 students from disadvantaged backgrounds at Darahoa charity classroom in Lam Dong.",
+    "process": [
+      [
+        "DRONEVERSE: lead a shared platform",
+        "I directed DRONEVERSE in Ho Chi Minh City, a public exhibition bringing together drones, robotics, motors, computer science, and student engineering projects."
+      ],
+      [
+        "Connect with specialist knowledge",
+        "We partnered with IsLab, a laboratory specializing in drones and AI-enabled drone systems, for expert talks and technical demonstrations."
+      ],
+      [
+        "Share the process",
+        "As a featured student speaker, I explained the ideation, prototyping, and testing journey behind student-led drone and engineering projects."
+      ],
+      [
+        "Darahoa: co-organize community learning",
+        "I co-organized a CS & STEM program at Darahoa charity classroom in Lam Dong, introducing 30 students from disadvantaged backgrounds to computer science, logical thinking, and simple STEM experiments. The program distributed 30 gift packages with a total value of VND 10 million."
+      ]
+    ],
+    "metrics": [
+      [
+        "500",
+        "DRONEVERSE reach"
+      ],
+      [
+        "30",
+        "Creativism Club members"
+      ],
+      [
+        "30",
+        "Darahoa students"
+      ],
+      [
+        "VND 10m",
+        "30 Darahoa gift packages"
+      ]
+    ],
+    "details": [
+      [
+        "Club leadership",
+        "President of a 30-member STEM club using drones, robotics, motors, and computer science to make engineering concepts accessible through hands-on projects."
+      ],
+      [
+        "DRONEVERSE",
+        "Directed DRONEVERSE in Ho Chi Minh City, reaching 500 people; partnered with IsLab for expert talks and technical demonstrations, and served as a featured student speaker."
+      ],
+      [
+        "Darahoa community program",
+        "Co-organized CS and STEM learning for 30 students from disadvantaged backgrounds and distributed 30 gift packages totaling VND 10 million."
+      ]
+    ],
+    "missing": [
+      "Talk title and approved recording",
+      "Darahoa program date"
+    ],
+    "skills": [
+      "Team leadership",
+      "Public speaking",
+      "Event direction",
+      "Technical communication",
+      "CS & STEM outreach"
+    ],
+    "evidence": [
+      [
+        "Creativism Club project page",
+        "https://www.facebook.com/Creativism20/"
+      ]
+    ],
+    "secondary": [
+      "droneverse-team",
+      "Thakorn and two other participants at the DRONEVERSE event.",
+      "An exchange of ideas at DRONEVERSE."
+    ],
+    "gallery": [
+      [
+        "droneverse-exhibition",
+        "Visitors inspecting a drone displayed at the DRONEVERSE exhibition.",
+        "A closer look at the engineering behind the exhibition."
+      ],
+      [
+        "droneverse-talk",
+        "A speaker presenting while Thakorn sits beside an educational engine model at DRONEVERSE.",
+        "Technical talks and conversation at DRONEVERSE."
+      ]
+    ],
+    "photo_stories": [
+      {
+        "id": "darahoa",
+        "title": "Darahoa · Learning together",
+        "intro": "The CS & STEM program at Darahoa charity classroom in Lam Dong introduced 30 students from disadvantaged backgrounds to computer science, logical thinking, and simple experiments. We also distributed 30 gift packages totaling VND 10 million.",
+        "images": [
+          [
+            "creativism-darahoa-stem-demo",
+            "Volunteers and children gathered around a tabletop STEM demonstration at Darahoa.",
+            "A shared STEM demonstration at Darahoa, with students gathered around the experiment."
+          ],
+          [
+            "creativism-darahoa-teaching",
+            "Student volunteers explaining an activity at the front of the Darahoa classroom.",
+            "Explaining an activity before working through it together."
+          ],
+          [
+            "creativism-darahoa-workshop",
+            "Volunteers assisting children working at desks in the Darahoa classroom.",
+            "Supporting learners as they work through classroom activities."
+          ],
+          [
+            "creativism-darahoa-gifts",
+            "Students and volunteers together in the Darahoa classroom, with children holding gift packages.",
+            "The Darahoa program included 30 gift packages with a total value of VND 10 million."
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "physics-behind-engineering",
+    "title": "PhyX Club · Physics Behind Engineering",
+    "category": "Community Impact",
+    "role": "Vice President, Program Organizer & Instructor",
+    "date": "[CẦN BỔ SUNG]",
+    "status": "Club leadership",
+    "image": "phyx-teaching",
+    "alt": "Thakorn teaching a classroom of students at Làng May Mắn.",
+    "caption": "Hands-on STEM learning at Làng May Mắn through PhyX Club.",
+    "summary": "Making mechanics, energy, electricity, buoyancy, and flight visible through hands-on learning.",
+    "overview": "Through PhyX Club, I developed the Physics Behind Engineering series, using visual explainers and demonstrations to connect scientific principles with real engineering applications. I organized and taught a two-month program for 30 students at Làng May Mắn.",
+    "process": [
+      [
+        "Connect theory with examples",
+        "The series linked mechanics, energy, electricity, buoyancy, and flight to real engineering applications."
+      ],
+      [
+        "Teach through participation",
+        "Hands-on demonstrations and guided activities made scientific ideas practical and approachable for learners."
+      ],
+      [
+        "Support access to learning",
+        "The program included VND 10 million in donated school supplies."
+      ]
+    ],
+    "metrics": [
+      [
+        "2 months",
+        "Program duration"
+      ],
+      [
+        "30",
+        "Students taught"
+      ],
+      [
+        "VND 10m",
+        "School supplies donated"
+      ]
+    ],
+    "details": [
+      [
+        "Leadership role",
+        "Vice President, program organizer, and instructor for the Physics Behind Engineering series."
+      ],
+      [
+        "Teaching program",
+        "Organized and taught a two-month program for 30 students at Làng May Mắn and donated VND 10 million in school supplies."
+      ],
+      [
+        "Learning themes",
+        "Visual explainers and demonstrations connected mechanics, energy, electricity, buoyancy, and flight with real engineering applications."
+      ]
+    ],
+    "missing": [
+      "Program dates and session schedule",
+      "Sample lesson and learning outcomes"
+    ],
+    "skills": [
+      "STEM instruction",
+      "Program organization",
+      "Physics communication",
+      "Peer leadership"
+    ],
+    "evidence": [],
+    "gallery": [
+      [
+        "phyx-workshop",
+        "Thakorn explaining a diagram on a classroom screen during the PhyX program.",
+        "Connecting classroom explanations with engineering ideas at Làng May Mắn."
+      ]
+    ],
+    "photo_stories": [
+      {
+        "id": "lang-may-man",
+        "title": "Làng May Mắn · Participation in practice",
+        "intro": "The two-month PhyX program combined explanations, guided activities, and classroom participation for 30 students. These moments show the teaching environment behind the program.",
+        "images": [
+          [
+            "phyx-small-group-learning",
+            "A volunteer moving between desks while students take part in a PhyX classroom activity.",
+            "Guiding students during classroom work at Làng May Mắn."
+          ],
+          [
+            "phyx-student-participation",
+            "A student raising a hand while an instructor presents beside a classroom screen.",
+            "Making room for student responses and questions during the lesson."
+          ]
+        ]
+      }
+    ]
+  }
+]
